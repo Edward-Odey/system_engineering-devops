@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 #display best school ten times and dislay
-#"Hi" after the 9th interation
+#"9" after the 9th interation
 
-i=1
+count=0
 
-while [ $i -lt 10 ]
+while [ $count -lt 10 ]
 do
-	if [ $i = 9 ]
+	if [ $count = 9 ]
 	then
 		echo Hi
 	fi
 	echo Best School
-	((i+=1))
+	((count += 1))
 done
